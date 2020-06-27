@@ -45,3 +45,14 @@ http://localhost:9200/_cat/indices/?v
 url to find data inside index
 
 http://localhost:9200/elasticsearch/_search
+
+
+#Kafka_Streams
+
+ - Kafka Streams is used to process data in real time
+ 
+ 1. In this application, the Kafka Streams process the tweets from topic "twitter_tweet"
+ 2. It filters the tweet wtih more than 10,000 followers
+ 3. It then puts the filteres tweets in to "important_tweets" topic
+ 4. Start a console consumer to consume from this topic "important_tweets" and verify the data
+ 
